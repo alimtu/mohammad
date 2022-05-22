@@ -1,3 +1,44 @@
+@font-face {
+  font-family: "Acme";
+  src: url("./assest/fonts/Acme-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Handlee";
+  src: url("./assest/fonts/Handlee-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("./assest/fonts/CormorantGaramond-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rancho";
+  src: url("./assest/fonts/Rancho-Regular.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Acme";
+}
+
+h4 {
+  font-family: "CormorantGaramond";
+}
+h5 {
+  font-family: "Rancho";
+}
+
+.textFonts {
+  font-family: "Handlee";
+  font-weight: 600;
+  font-size: larger;
+}
+.textFontsTwo {
+  font-family: "Acme";
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +76,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.myCard {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.projectCard {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.favTitle {
+  font-family: "CormorantGaramond";
 }
