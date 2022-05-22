@@ -29,7 +29,6 @@ const postData = [
 ];
 
 const PostProject = ({ title, text, image, tags, time }) => {
-  console.log(tags);
   return (
     <Card
       style={{
@@ -41,7 +40,11 @@ const PostProject = ({ title, text, image, tags, time }) => {
     >
       <Row justify="center">
         <Col xs={24} md={24}>
-          <Space direction={isMobile ? "vertical" : "horizontal"} size="large">
+          <Space
+            direction={isMobile ? "vertical" : "horizontal"}
+            size="large"
+            align={isMobile && "center"}
+          >
             <Image
               src={image}
               style={{

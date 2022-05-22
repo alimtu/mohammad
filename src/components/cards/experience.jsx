@@ -61,7 +61,7 @@ const ExperienceCard = () => {
     >
       <Timeline mode="alternate">
         {experienceData.map((t, inx) => (
-          <Timeline.Item color={t.color}>
+          <Timeline.Item color={t.color} key={inx}>
             <div style={{ display: "flex", flexDirection: "column" }}>
               <Text className="textFonts">{t.date}</Text>
               <Text className="textFonts" strong>

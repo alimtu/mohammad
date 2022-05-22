@@ -112,7 +112,7 @@ const ProjectsCard = () => {
     >
       <Row gutter={[25, 25]}>
         {projectsData.map((t, inx) => (
-          <Col md={8} xs={24}>
+          <Col md={8} xs={24} key={inx}>
             <CardProject
               title={t.title}
               text={t.text}
